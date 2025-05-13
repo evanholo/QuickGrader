@@ -37,6 +37,8 @@ services:
       - backend
     networks:
       - autograder-network
+    ports:
+      - "5173:5173"
 
   nginx:
     image: nginx:alpine

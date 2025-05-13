@@ -69,7 +69,8 @@ CREATE TABLE submissions (
     updated_at TIMESTAMP WITH TIME ZONE DEFAULT CURRENT_TIMESTAMP
 );
 
--- Submission_Files Table
+-- Submission_Files Table 
+-- see if we need this 
 CREATE TABLE submission_files (
     submission_file_id SERIAL PRIMARY KEY,
     submission_id INTEGER REFERENCES submissions(submission_id),
@@ -94,7 +95,8 @@ CREATE TABLE test_results (
 );
 
 
--- Test Files Table
+-- Test Files Table 
+ --see if we need this 
 CREATE TABLE test_files (
     test_file_id SERIAL PRIMARY KEY,
     project_id INTEGER REFERENCES projects(project_id),
