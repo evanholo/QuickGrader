@@ -11,6 +11,7 @@ export default defineConfig({
     },
   },
   server: {
-
+    port: 5173,
+    strictPort: true, // Vite will not increment, but fail if 5173 is in use
   },
 });

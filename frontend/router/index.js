@@ -8,4 +8,6 @@ const router = createRouter({
             component: Welcome,
         },
     ],
-});  
+}); 
+
+export default router
