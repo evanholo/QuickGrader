@@ -1,0 +1,16 @@
+{
+    "name": "quickgrader",
+    "version": "1.0.0",
+    "scripts": {
+        "start:dev": "npm run build:vite:dev & { npm run start:vite & npm run start:backend; }",
+        "start:vite": "cd frontend && npm run dev",
+        "start:backend": "cd backend && npm run dev",
+        "build:vite:dev": "cd frontend && npm run build",
+        "docker:start": "docker compose up postgres -d && sleep 2 && docker compose up frontend backend nginx",
+        "docker:stop": "docker compose down",
+        "docker:build": "docker compose build",
+        "docker:logs": "docker compose logs -f"
+    },
+    "dependencies": {
+    }
+}
